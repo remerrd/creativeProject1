@@ -1,5 +1,6 @@
 h1,h2,h3,div,p,ul,ol {
     font-family: Arial, Helvetica, sans-serif;
+    color: gray;
 }
 h1{
     font-size: 50;
@@ -9,4 +10,7 @@ h3{
 }
 p{
     font-size: 20;
+}
+div{
+    padding: 20;
 }
