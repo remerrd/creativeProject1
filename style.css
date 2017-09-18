@@ -4,6 +4,7 @@ h1,h2,h3,div,p,ul,ol {
 }
 h1{
     font-size: 50;
+    text-align: center;
 }
 h3{
     font-size: 30;
