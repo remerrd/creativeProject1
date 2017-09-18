@@ -1,5 +1,6 @@
 #sidebar
 {
+    top: 0px;
     position: absolute;
     right: 0px;
     width:20%;
@@ -15,9 +16,9 @@
 }
 #sidebar ul a
 {
+    text-align: center;
     display: block;
     color: white;
-    padding: 8px 16px;
     text-decoration: none;
 }
 #sidebar ul a:hover
