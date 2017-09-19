@@ -46,11 +46,11 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
+#aboutUs{
+    width: 60%;
+    margin: 40px;
+}
 #bar li a:hover
 {  
     background-color: #2E2E2E
-}
-div{
-    width: 60%;
-    margin: 40px;
 }
