@@ -1,12 +1,12 @@
 #sidebar
 {
     right: 0px;
+    width: 30%;
     margin: 0px;
 }
 #sidebar ul
 {
     right: 0px;
-    width: 30%;
     list-style: none;
     margin: 0px;
     background-color: black;
