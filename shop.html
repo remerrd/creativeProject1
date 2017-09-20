@@ -29,12 +29,29 @@
                 "Item",
                 "Item"
             ];
-            //var headers = ["WalkCar","Item","Item","Item","Item","Item"];
+            var links = ["WalkCar","Item","Item","Item","Item","Item"];
             function goToIndex(n) {
                 index = n;
                 document.getElementById("name").innerHTML = headers[n];
                 document.getElementById("item").innerHTML = images[n];
                 document.getElementById("desc").innerHTML = descriptions[n];
+                document.getElementById("links").innerHTML = links[n];
+            }
+            function goLeft() {
+                if (index == 0) {
+                    goToIndex(5);
+                }
+                else {
+                    goToIndex(index - 1);
+                }
+            }
+            function goRight() {
+                if (index == 5) {
+                    goToIndex(0);
+                }
+                else {
+                    goToIndex(index + 1);
+                }
             }
         </script>
     </head>
@@ -55,14 +72,14 @@
             <div id="content">
                 <h3 id="name">WalkCar</h3>
                 <section id="main">
-                    <div id="left">
+                    <div id="left" onclick="goLeft()">
                         Left
                     </div>
                     <div id="item">
                         <img src="https://www.waycoolgadgets.com/wp-content/uploads/2015/09/walkcar-human-transporter.jpg">
                     </div>
-                    <div id="right">
-                        Left
+                    <div id="right" onclick="goRight()">
+                        Right
                     </div>
 
                 </section>
