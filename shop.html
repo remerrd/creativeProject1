@@ -12,7 +12,22 @@
         <meta name="description" content="The creative project we made for BYU C S 260">
         <meta name="robots" content="all">
         <script>
-            
+            var index = 0;
+            var headers = ["WalkCar","Item","Item","Item","Item","Item"];
+            //var headers = ["WalkCar","Item","Item","Item","Item","Item"];
+            var descriptions = [
+                "The time has come to carry your car. Introducing the world’s smallest car from Tokyo. GO FASTER. GO FURTHER. GO WALKCAR.",
+                "Item",
+                "Item",
+                "Item",
+                "Item",
+                "Item"
+            ];
+            //var headers = ["WalkCar","Item","Item","Item","Item","Item"];
+            function goToIndex(n) {
+                
+                document.getElementById("header").innerHTML = text;
+            }
         </script>
     </head>
     <body>
@@ -43,19 +58,17 @@
 
                 </section>
                 <section id="art">
-                    <p id="desc">This is a description.</p>
+                    <p id="desc">The time has come to carry your car. Introducing the world’s smallest car from Tokyo. GO FASTER. GO FURTHER. GO WALKCAR.</p>
                     <a>Link</a>
                 </section>
             </div>
             <div id="sidebar">
-                <ul>
-                    <li><a>WalkCar</a></li>
-                    <li><a>Item2</a></li>
-                    <li><a>Item3</a></li>
-                    <li><a>Item4</a></li>
-                    <li><a>Item5</a></li>
-                    <li><a>Item6</a></li>
-                </ul>
+                <li onclick="goToIndex(0)"><a>WalkCar</a></li>
+                <li onclick="goToIndex(1)"><a>Item</a></li>
+                <li onclick="goToIndex(2)"><a>Item</a></li>
+                <li onclick="goToIndex(3)"><a>Item</a></li>
+                <li onclick="goToIndex(4)"><a>Item</a></li>
+                <li onclick="goToIndex(5)"><a>Item</a></li>
             </div>
         </article>
     </body>
