@@ -14,7 +14,13 @@
         <script>
             var index = 0;
             var headers = ["WalkCar","Item","Item","Item","Item","Item"];
-            //var headers = ["WalkCar","Item","Item","Item","Item","Item"];
+            var images = [
+                "<img src=\"https://www.waycoolgadgets.com/wp-content/uploads/2015/09/walkcar-human-transporter.jpg\">",
+                "Item",
+                "Item",
+                "Item",
+                "Item",
+                "Item"];
             var descriptions = [
                 "The time has come to carry your car. Introducing the world’s smallest car from Tokyo. GO FASTER. GO FURTHER. GO WALKCAR.",
                 "Item",
@@ -27,6 +33,7 @@
             function goToIndex(n) {
                 index = n;
                 document.getElementById("name").innerHTML = headers[n];
+                document.getElementById("item").innerHTML = images[n];
                 document.getElementById("desc").innerHTML = descriptions[n];
             }
         </script>
@@ -52,7 +59,7 @@
                         Left
                     </div>
                     <div id="item">
-                        Image
+                        <img src="https://www.waycoolgadgets.com/wp-content/uploads/2015/09/walkcar-human-transporter.jpg">
                     </div>
                     <div id="right">
                         Left
