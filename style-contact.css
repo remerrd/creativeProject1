@@ -1,0 +1,23 @@
+#contact {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#a {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
+#name {
+    border-color: black;
+}
+#email {
+    border-color: black;
+}
+#subject {
+    border-color: black;
+}
+#message {
+    border-color: black;
+}

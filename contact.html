@@ -5,6 +5,7 @@
         <title>Creative Project 1</title>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style-contact.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Dallin Frank and Ryan Remer">
@@ -24,6 +25,43 @@
             </nav>
         </header>
 
-
+        <article>
+            <section id="contact">
+                <section id="a">
+                    <p id="listing">Name:</p>
+                    <input id="name" type="text">
+                </section>
+                <section id="a">
+                    <p id="listing">Email:</p>
+                    <input id="email" type="text">
+                </section>
+                <p id="listing">Subject:</p>
+                <input id="subject" type="text">
+                <p id="listing">Message:</p>
+                <input id="message" type="text">
+                <p id="listing"></p>
+            </section>
+            <div style="text-align:center">
+                <input id="submit" type="submit" onclick="verifyMessage()">
+            </div>
+            <script type="text/javascript">
+                function verifyMessage() {
+                    var name, subject, email, message, text;
+                    name = document.getElementById("name").value;
+                    subject = document.getElementById("subject").value;
+                    email = document.getElementById("email").value;
+                    message = document.getElementById("message").value;
+                    text = name + subject + email + message;
+                    sendMessage();
+                }
+                function sendMessage() {
+                    confirmSend();
+                }
+                function confirmSend() {
+                    alert("Message sent! (not really)");
+                    location.reload();
+                }
+            </script>
+        </article>
     </body>
 </html>
