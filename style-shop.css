@@ -69,13 +69,15 @@ article{
 }
 #item{
     float: left;
-    background-color: rgba(211, 211, 211, 0.43);
+    background-color: rgb(34, 34, 34);
     height: 100%;
     width: 80%;
 }
 #item img{
     width: auto;
-    max-height: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 #right{
     float: left;

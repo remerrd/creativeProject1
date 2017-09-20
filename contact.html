@@ -11,6 +11,41 @@
         <meta name="author" content="Dallin Frank and Ryan Remer">
         <meta name="description" content="The creative project we made for BYU C S 260">
         <meta name="robots" content="all">
+
+        <script type="text/javascript">
+            function verifyMessage() {
+                var name, subject, email, message, text;
+                name = document.getElementById("name").value;
+                subject = document.getElementById("subject").value;
+                email = document.getElementById("email").value;
+                message = document.getElementById("message").value;
+                if(name == "" || subject == "" || email == "" || message == "") {
+                    if(name == "") {
+                        
+                    }
+                    if(subject == "") {
+
+                    }
+                    if(email == "") {
+
+                    }
+                    if(message == "") {
+
+                    }
+                }
+                else {
+                    text = name + subject + email + message;
+                    sendMessage();
+                }
+            }
+            function sendMessage() {
+                confirmSend();
+            }
+            function confirmSend() {
+                alert("Message sent! (not really)");
+                location.reload();
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -28,39 +63,25 @@
             <section id="contact">
                 <section id="a">
                     <p id="listing">Name:</p>
+                    <p id="e1" class="error"></p>
                     <input id="name" type="text">
                 </section>
                 <section id="a">
                     <p id="listing">Email:</p>
+                    <p id="e2" class="error"></p>
                     <input id="email" type="text">
                 </section>
                 <p id="listing">Subject:</p>
+                <p id="e3" class="error"></p>
                 <input id="subject" type="text">
                 <p id="listing">Message:</p>
+                <p id="e4" class="error"></p>
                 <input id="message" type="text">
                 <p id="listing"></p>
             </section>
             <div style="text-align:center">
                 <input id="submit" type="submit" onclick="verifyMessage()">
             </div>
-            <script type="text/javascript">
-                function verifyMessage() {
-                    var name, subject, email, message, text;
-                    name = document.getElementById("name").value;
-                    subject = document.getElementById("subject").value;
-                    email = document.getElementById("email").value;
-                    message = document.getElementById("message").value;
-                    text = name + subject + email + message;
-                    sendMessage();
-                }
-                function sendMessage() {
-                    confirmSend();
-                }
-                function confirmSend() {
-                    alert("Message sent! (not really)");
-                    location.reload();
-                }
-            </script>
         </article>
     </body>
 </html>
