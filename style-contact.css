@@ -1,7 +1,13 @@
-#contact {
-    width: 100%;
+article {
+    width: 90%;
+    display: block;
     padding-left: 5%;
     padding-right: 5%;
+}
+#contact {
+    width: 90%;
+    /*margin-left: 5%;
+    margin-right: 5%;*/
 }
 
 #a {
@@ -20,4 +26,7 @@
 }
 #message {
     border-color: black;
+}
+#listing {
+    text-align: center;
 }
