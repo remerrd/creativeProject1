@@ -13,23 +13,29 @@
         <meta name="robots" content="all">
         <script>
             var index = 0;
-            var headers = ["WalkCar","Item","Item","Item","Item","Item"];
+            var headers = ["WalkCar","Roll N Pour","Hushme","Bruno","The Metal Detecting Sandals","Massage-me"];
             var images = [
                 "<img src=\"https://www.waycoolgadgets.com/wp-content/uploads/2015/09/walkcar-human-transporter.jpg\">",
-                "Item",
-                "Item",
-                "Item",
-                "Item",
-                "Item"];
+                "<img src=\"https://images-na.ssl-images-amazon.com/images/I/41FJQwQLfgL.jpg\">",
+                "<img src=\"http://www.telegraph.co.uk/content/dam/technology/2017/01/11/hushme_trans_NvBQzQNjv4BqypDu90kZXMl1ahZ6bcqgrbWpQL-TsLBiykJQ_7HB4rQ.PNG?imwidth=1400\">",
+                "<img src=\"https://media3.s-nbcnews.com/j/newscms/2015_18/1003131/bruno2_6462a62499b91180e00b7352568e7bf5.nbcnews-ux-2880-1000.jpg\">",
+                "<img src=\"https://i.amz.mshcdn.com/oCXSvBhdL-Y3SC15Ll-pqte2khE=/fit-in/850x850/http%3A%2F%2Fmashable.com%2Fwp-content%2Fgallery%2F10-weird-gadgets-that-never-got-off-the-ground%2FMetal%2520Detecting%2520Sandals.jpeg\">",
+                "<img src=\"http://cdn.lifebuzz.com/images/112466/lifebuzz-bc5f6f93d54563a9f9c714c2723959de-limit_2000.jpg\">"];
             var descriptions = [
                 "The time has come to carry your car. Introducing the world’s smallest car from Tokyo. GO FASTER. GO FURTHER. GO WALKCAR.",
-                "Item",
-                "Item",
-                "Item",
-                "Item",
-                "Item"
+                "This is a cure all product for those with weak or underdeveloped wrist muscles like seniors, children and young women. Just place the heavy jug of milk or soda into the Roll N Pour and tilt it over to pour. No need to hold the bottle or jug and bend the wrist at all. What a problem solved...and mess solver too.",
+                "Wireless in-ear headphones with microphone allow for using Hushme as hands-free system.  Powerful built-in speakers allow for using Hushme as portable wireless speaker",
+                "bruno and its patents pending technologies have been many months in the making. The powerful vortex vacuum feature will deliver every dog hair, cheerio and grain of dirt directly into the trash bag. Just place the broom in front of the vacuum inlet to start the powerful vortex suction and Bruno will do the rest. Bruno will also remind you to take the trash out on trash day, and alert you when you are low on bruno bags (a fancy way of saying trash bags).",
+                "These are the sandals that can detect metal while you walk, allowing you to find buried artifacts while strolling the beach. A copper coil built into the right sandal is powered via a battery pack that straps to your calf.",
+                "Playing Massage me requires two people, one who wears the jacket to receive the massage and one who massages the person wearing the jacket. Soft flexible buttons are embedded in back of the jacket so that wearing it turns your back into a gamepad. All you need to do is to sit or lay down in front of a video game player and you will be able to enjoy a back massage while the game lasts."
             ];
-            var links = ["WalkCar","Item","Item","Item","Item","Item"];
+            var links = [
+                "<a href=\"https://www.cocoamotors.com/\">Visit Site</a>",
+                "<a href=\"https://www.amazon.com/Roll-N-Pour-RNP-1/dp/B001E1SRFO?ie=UTF8&ref_=cm_cr_arp_d_product_top\">Visit Site</a>",
+                "<a href=\"http://gethushme.com/\">Visit Site</a>",
+                "<a href=\"http://brunosmartcan.com/\">Visit Site</a>",
+                "<a href=\"http://www.hammacher.com/product/76779\">Visit Site</a>",
+                "<a href=\"http://www.massage-me.at/\">Visit Site</a>"];
             function goToIndex(n) {
                 index = n;
                 document.getElementById("name").innerHTML = headers[n];
@@ -84,16 +90,18 @@
                 </section>
                 <section id="art">
                     <p id="desc">The time has come to carry your car. Introducing the world’s smallest car from Tokyo. GO FASTER. GO FURTHER. GO WALKCAR.</p>
-                    <a>Link</a>
+                    <div id="link">
+                        <a href="https://www.cocoamotors.com/">Visit Site</a>
+                    </div>
                 </section>
             </div>
             <div id="sidebar">
                 <li onclick="goToIndex(0)"><a>WalkCar</a></li>
-                <li onclick="goToIndex(1)"><a>Item</a></li>
-                <li onclick="goToIndex(2)"><a>Item</a></li>
-                <li onclick="goToIndex(3)"><a>Item</a></li>
-                <li onclick="goToIndex(4)"><a>Item</a></li>
-                <li onclick="goToIndex(5)"><a>Item</a></li>
+                <li onclick="goToIndex(1)"><a>Roll N Pour</a></li>
+                <li onclick="goToIndex(2)"><a>Hushme</a></li>
+                <li onclick="goToIndex(3)"><a>Bruno</a></li>
+                <li onclick="goToIndex(4)"><a>The Metal Detecting Sandals</a></li>
+                <li onclick="goToIndex(5)"><a>Massage-me</a></li>
             </div>
         </article>
     </body>
