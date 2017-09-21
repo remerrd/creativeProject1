@@ -21,16 +21,16 @@
                 message = document.getElementById("message").value;
                 if(name == "" || subject == "" || email == "" || message == "") {
                     if(name == "") {
-                        
+                        document.getElementById("e1").innerHTML = "Required.";
                     }
                     if(subject == "") {
-
+                        document.getElementById("e2").innerHTML = "Required.";
                     }
                     if(email == "") {
-
+                        document.getElementById("e3").innerHTML = "Required.";
                     }
                     if(message == "") {
-
+                        document.getElementById("e4").innerHTML = "Required.";
                     }
                 }
                 else {
@@ -62,22 +62,22 @@
         <article>
             <section id="contact">
                 <section id="a">
-                    <p id="listing">Name:</p>
+                    <h3 id="listing">Name:</h3>
                     <p id="e1" class="error"></p>
-                    <input id="name" type="text">
+                    <input class="input" id="name" type="text">
                 </section>
                 <section id="a">
-                    <p id="listing">Email:</p>
+                    <h3 id="listing">Email:</h3>
                     <p id="e2" class="error"></p>
-                    <input id="email" type="text">
+                    <input class="input" id="email" type="text">
                 </section>
-                <p id="listing">Subject:</p>
+                <h3 id="listing">Subject:</h3>
                 <p id="e3" class="error"></p>
-                <input id="subject" type="text">
-                <p id="listing">Message:</p>
+                <input class="input" id="subject" type="text">
+                <p class="error"></p>
+                <h3 id="listing">Message:</h3>
                 <p id="e4" class="error"></p>
-                <input id="message" type="text">
-                <p id="listing"></p>
+                <input class="input" id="message" type="text">
             </section>
             <div style="text-align:center">
                 <input id="submit" type="submit" onclick="verifyMessage()">

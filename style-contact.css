@@ -4,7 +4,13 @@ article {
     padding-left: 5%;
     padding-right: 5%;
 }
-#contact {
+
+.error {
+    height: 15px;
+    color: red;
+    font-size: small;
+    text-align: center;
+    font-style: italic;
 }
 
 #a {
@@ -12,18 +18,41 @@ article {
     float: left;
     margin-bottom: 30px;
 }
-#name {
-    border-color: black;
+#a #name {
+    width: 95%;
 }
-#email {
-    border-color: black;
+#a #email {
+    width: 95%;
 }
-#subject {
+.input {
     border-color: black;
-}
-#message {
-    border-color: black;
+    border-radius: 4px;
+    width: 99%;
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
 }
 #listing {
     text-align: center;
+}
+#submit {
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+    padding: 10px;
+    margin-top: 50px;
+    border-color: black;
+    border-radius: 4px;
+    background-color: #AAAAAA;
+}
+#submit:hover {
+    border-color: black;
+    background-color: #DBDBDB;
+    cursor: pointer;
 }
