@@ -1,9 +1,12 @@
 article{
     height: 100%;
+    background-color: black;
+    color:white;
 }
 #content {
     float: left;
-    background-color: rgb(34, 34, 34);
+    background-color: black;
+    color:white;
     height: 100%;
     width: 70%;
     position: fixed;
@@ -60,7 +63,8 @@ article{
     text-align: center;
 }
 #art{
-    background-color: green;
+    background-color: black;
+    color:white;
     height: 45%;
     width: 100%;
 }
