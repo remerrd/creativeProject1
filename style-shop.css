@@ -8,6 +8,7 @@ article{
     height: 100%;
     width: 70%;
     position: fixed;
+    overflow-y: hidden;
 }
 #sidebar {
     float: right;
@@ -102,7 +103,6 @@ article{
     text-align: center;
     color: white;
     background-color: black;
-    overflow-y: auto;
 }
 #left img {
     -moz-transform: scaleX(-1);
