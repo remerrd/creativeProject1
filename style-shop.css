@@ -102,6 +102,7 @@ article{
     text-align: center;
     color: white;
     background-color: black;
+    overflow-y: auto;
 }
 #left img {
     -moz-transform: scaleX(-1);
