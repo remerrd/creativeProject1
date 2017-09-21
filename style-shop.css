@@ -10,7 +10,7 @@ article{
 }
 #sidebar {
     float: right;
-    background-color: red;
+    background-color: #1A1A1A;
     height: 100%;
     width: 30%;
     right: 0;
@@ -35,11 +35,13 @@ article{
     float:left;
     padding: 8% 10px;
     width: 100%;
-    background-color: rgba(255, 196, 0, 0.43);
+    background-color: rgba(99, 99, 99, 0.43);
+    color: white;
 }
 #sidebar li:hover
 {
     background-color: orange;
+    color: black;
     cursor: pointer;
 }
 
@@ -50,9 +52,12 @@ article{
 #content h3{
     background-color: grey;
     height: 5%;
-    padding: 10px;
+    padding-top: 20px;
     margin: 0;
     width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
 }
 #art{
     background-color: green;
@@ -68,7 +73,6 @@ article{
 }
 #item{
     float: left;
-    background-color: rgba(34, 34, 34, 0);
     height: 100%;
     width: 80%;
 }
@@ -88,4 +92,16 @@ article{
 }
 #desc{
     margin: 0px;
+}
+#left img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    width: 100%;
+}
+#right img {
+    width: 100%;
 }
