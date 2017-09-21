@@ -4,7 +4,11 @@ h1,h2,h3,div,p,ul,ol {
 }
 h1{
     font-size: 70;
+    background-image: url("https://t3.ftcdn.net/jpg/01/09/81/02/240_F_109810224_B2Jmt5FCLjcySrE7K1VwgOnIxPQ6XHQZ.jpg");
+    background-size: 60%;
     text-align: center;
+    padding: 1%;
+    margin: 0;
 }
 h2{
     font-size: 50;
